@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="mathscheatobject" class="Spring_Core.loose_coupling.MathCheat"></bean>
+<bean id="scicheatobject" class="Spring_Core.loose_coupling.ScienceCheat"></bean>
+
+<bean id="student" class="Spring_Core.loose_coupling.Student">
+<property name="cheat" ref="mathscheatobject"></property>
+</bean>
+</beans>
